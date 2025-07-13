@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Para você 💜</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #7a00cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      flex-direction: column;
+    }
+    #message {
+      font-size: 3rem;
+      display: none;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+      color: #7a00cc;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #eeeeee;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showLove()">Clique aqui 💜</button>
+  <div id="message">Eu te amo, Bobzi 💖</div>
+
+  <script>
+    function showLove() {
+      document.querySelector('button').style.display = 'none';
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
